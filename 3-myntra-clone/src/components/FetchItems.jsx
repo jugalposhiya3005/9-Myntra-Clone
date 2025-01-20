@@ -13,7 +13,7 @@ export default function FetchItems() {
     const controller = new AbortController();
     const signal = controller.signal;
 
-    fetch("http://localhost:8080/items", { signal })
+    fetch("http://54.161.230.216:5173/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         
